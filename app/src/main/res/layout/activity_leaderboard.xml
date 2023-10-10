@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderboardActivity"
+    android:background="@drawable/splash_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_avatar"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tvChallengeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Smith"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@id/ivAvatar"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivPos1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_pos_1"
+                        android:layout_gravity="end"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/actionCount1"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="12"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="11dp"
+
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/ivAvatar1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_avatar"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tvChallengeTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kamil Elmi"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@id/ivAvatar1"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivPos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_pos_2"
+                        android:layout_gravity="end"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/actionCount"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="8"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="11dp"
+
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/splash_bg"
+    >
+
+
+    <ImageView
+        android:id="@+id/ivApp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_bulb"
+        />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLeaderboard"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_edittext"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="20dp"
+            android:text="Leaderboard"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChallenges"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="20dp"
+            android:text="Challenges"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
